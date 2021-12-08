@@ -39,7 +39,7 @@ body {
 
 .contenedor.header {
     height: calc(100vh - 60px);
-    border: 3px solid #555555;
+    /* border: 3px solid #555555; */
 }
 
 .barra-navegacion ul {
@@ -121,17 +121,23 @@ body {
 .footer{
     height: 10%;
     display: flex;
-    left: auto;
+    
+    
 }
 .footer ul {
     align-items: center;
     margin: auto;
     padding: 10px;
     list-style: none;
+    justify-content: space-between;
+   
+
 }
 .footer ul li{
     font-size: 30px;
     margin: 30px;
+    display: inline-block;
+    
 }
 
 
@@ -150,6 +156,10 @@ body {
 
 
 @media screen and (max-width: 400px){
+    body{
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
     .barra-navegacion .logo { 
         color:#857499;
         font-size: 30px;
@@ -159,16 +169,22 @@ body {
     }
     .barra-navegacion ul {
         flex-direction: column;
+        margin: 10px;
     }
     .contenido-descripcion .titulo span:first-child {
         font-size: 30px;
+        display: flex;
+
     }
     .contenido-descripcion .titulo span:last-child {
         font-size: 40px;
     }
-    .footer ul{
-        flex-direction: column;
-        display:flex;
+    .footer ul li{
+        display:list-item
+    
+    }
+    .descripcion{
+        font-size: 15px;
     }
     
 }
