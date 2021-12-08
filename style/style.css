@@ -124,7 +124,6 @@ body {
     left: auto;
 }
 .footer ul {
-    display: flex;
     align-items: center;
     margin: auto;
     padding: 10px;
@@ -147,4 +146,29 @@ body {
     100%{
         opacity: .5;
     }
+}
+
+
+@media screen and (max-width: 400px){
+    .barra-navegacion .logo { 
+        color:#857499;
+        font-size: 30px;
+    }
+    .barra-navegacion a {
+        font-size: 13px;
+    }
+    .barra-navegacion ul {
+        flex-direction: column;
+    }
+    .contenido-descripcion .titulo span:first-child {
+        font-size: 30px;
+    }
+    .contenido-descripcion .titulo span:last-child {
+        font-size: 40px;
+    }
+    .footer ul{
+        flex-direction: column;
+        display:flex;
+    }
+    
 }
